@@ -31,6 +31,8 @@ StudyOS Notes is the note-taking part of **StudyOS**, a complete Obsidian vault 
 
 StudyOS Notes is free. If it saves you time in class, you can buy me a coffee: the **Support** button on this plugin's page in Obsidian (Settings > Community plugins).
 
+[Buy me a coffee](https://buymeacoffee.com/yanndjoko18)
+
 ## License
 
 Source available under the [PolyForm Noncommercial License 1.0.0](LICENSE): free for personal, study and other noncommercial use, including changing it for yourself. Selling it, or using it in a paid product, is not allowed without written permission from Y-Labs.
