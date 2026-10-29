@@ -1,0 +1,106 @@
+/* ---- / menu and \ symbols ---- */
+.suggestion-item.sn-item { display: flex; align-items: center; gap: 10px; padding: 6px 10px; }
+.sn-icon { display: inline-flex; color: var(--text-muted); }
+.sn-icon svg { width: 16px; height: 16px; }
+.sn-label { color: var(--text-normal); }
+.sn-hint { margin-left: auto; padding-left: 16px; font-size: 12px; color: var(--text-faint); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sn-char { width: 22px; text-align: center; font-size: 17px; color: var(--text-normal); }
+
+/* ---- table size picker ---- */
+.sn-table-modal { width: auto; }
+.sn-table-size { margin-bottom: 10px; color: var(--text-muted); font-size: 13px; }
+.sn-table-grid { display: grid; grid-template-columns: repeat(8, 26px); gap: 4px; }
+.sn-cell { height: 22px; border-radius: 4px; border: 1px solid var(--background-modifier-border); cursor: pointer; }
+.sn-cell.is-on { background: hsla(var(--interactive-accent-hsl), 0.35); border-color: var(--interactive-accent); }
+.sn-table-help { margin-top: 12px; font-size: 12px; color: var(--text-faint); max-width: 236px; }
+
+/* ---- bar over a selection: dark, whatever the editor's tooltip colours ---- */
+.cm-tooltip:has(> .sn-bar) { border: none !important; background: transparent !important; box-shadow: none !important; }
+.sn-bar { display: flex; align-items: center; gap: 2px; padding: 3px; margin-bottom: 6px; border-radius: 8px; background: #23262d !important; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45); }
+.sn-bar button { height: 28px; width: 30px; padding: 0; border-radius: 6px; background: transparent !important; box-shadow: none !important; color: #c9ced6 !important; }
+.sn-bar button:hover { background: rgba(255, 255, 255, 0.1) !important; color: #ffffff !important; }
+.sn-bar svg { width: 16px; height: 16px; }
+.sn-bar-sep { width: 1px; height: 18px; margin: 0 3px; background: rgba(255, 255, 255, 0.14); }
+
+/* ---- tables: compact, header on a band, quiet lines ---- */
+.markdown-rendered table, .cm-table-widget table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--background-modifier-border); border-radius: 8px; overflow: hidden; font-size: 0.94em; margin: 10px 0; }
+.markdown-rendered th, .cm-table-widget th { background: var(--background-secondary-alt); font-weight: 600; text-align: left; }
+.markdown-rendered th, .markdown-rendered td, .cm-table-widget th, .cm-table-widget td { border: none; border-bottom: 1px solid var(--background-modifier-border); border-right: 1px solid var(--background-modifier-border); padding: 6px 12px; min-width: 56px; }
+.markdown-rendered tr > :last-child, .cm-table-widget tr > :last-child { border-right: none; }
+.markdown-rendered tbody tr:last-child td, .cm-table-widget tbody tr:last-child td { border-bottom: none; }
+.markdown-rendered tbody tr:nth-child(even) td, .cm-table-widget tbody tr:nth-child(even) td { background: rgba(255, 255, 255, 0.025); }
+
+/* ---- highlight: readable on the dark theme ---- */
+body.theme-dark { --text-highlight-bg: rgba(242, 200, 106, 0.32); --text-highlight-bg-active: rgba(242, 200, 106, 0.45); }
+.theme-dark .cm-s-obsidian span.cm-highlight, .theme-dark .markdown-rendered mark { color: var(--text-normal); border-radius: 3px; padding: 0 2px; }
+
+/* ---- bar over a hovered table: rows and columns ---- */
+.sn-table-bar { position: fixed; z-index: var(--layer-tooltip); display: flex; align-items: center; gap: 2px; padding: 3px; border-radius: 8px; background: var(--background-secondary); border: 1px solid var(--background-modifier-border); box-shadow: var(--shadow-s); }
+.sn-table-bar button { height: 26px; width: 28px; padding: 0; background: transparent; box-shadow: none; color: var(--text-muted); }
+.sn-table-bar button:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
+.sn-table-bar button.is-del:hover { color: var(--text-error); }
+.sn-table-bar button:nth-of-type(5) { margin-left: 6px; }
+.sn-table-bar svg { width: 15px; height: 15px; }
+.sn-table-where { padding: 0 8px 0 6px; font-size: 11.5px; color: var(--text-faint); white-space: nowrap; }
+
+/* ---- photos → notes: review screen ---- */
+.sn-review { width: min(820px, 96vw); }
+.sn-review-photos { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; }
+.sn-review-photos img { height: 110px; border-radius: 6px; object-fit: cover; flex: none; }
+.sn-review-summary { margin: 8px 0 4px; color: var(--text-muted); font-size: 13px; }
+.sn-review-state { margin: 12px 0; color: var(--text-muted); }
+.sn-review-part { border: 1px solid var(--background-modifier-border); border-radius: 10px; padding: 10px 12px; margin: 10px 0; }
+.sn-review-part.is-skipped { opacity: 0.45; }
+.sn-review-where { display: flex; flex-wrap: wrap; gap: 6px; }
+.sn-review-where select, .sn-review-where input { flex: 1 1 220px; min-width: 0; }
+.sn-review-why { margin: 6px 0; font-size: 12px; color: var(--text-faint); }
+.sn-review-why.is-unsure { color: var(--text-warning); }
+.sn-review-preview { max-height: 320px; overflow-y: auto; padding: 4px 8px; border-radius: 6px; background: var(--background-secondary); font-size: 14px; }
+.sn-review-edit { width: 100%; min-height: 220px; font-family: var(--font-monospace); font-size: 12.5px; }
+.sn-review-tools, .sn-review-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.sn-review-actions { justify-content: flex-end; margin-top: 14px; }
+.callout[data-callout="photo"] { --callout-color: 151, 168, 186; --callout-icon: lucide-camera; }
+
+/* First-run setup */
+.modal.sos-setup { width: min(680px, 96vw); max-height: 90vh; overflow-y: auto; }
+.sos-setup h2 { margin: 6px 0 4px; }
+.sos-setup-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.sos-setup-dots { display: flex; gap: 6px; }
+.sos-setup-dots span { width: 8px; height: 8px; border-radius: 50%; background: var(--background-modifier-border); }
+.sos-setup-dots span.is-done { background: var(--interactive-accent); opacity: .45; }
+.sos-setup-dots span.is-on { background: var(--interactive-accent); width: 22px; border-radius: 4px; }
+.sos-setup-intro { color: var(--text-muted); margin: 0 0 10px; line-height: 1.5; }
+.sos-setup-hint { color: var(--text-muted); font-size: var(--font-ui-smaller); line-height: 1.5; }
+.sos-setup-status { margin: 6px 0; font-size: var(--font-ui-small); color: var(--text-muted); }
+.sos-setup-status.is-ok { color: var(--color-green); }
+.sos-setup-code { font-family: var(--font-monospace); font-size: 12px; user-select: text; }
+.sos-setup-courses { display: flex; flex-direction: column; gap: 10px; margin: 8px 0; }
+.sos-setup-course { border: 1px solid var(--background-modifier-border); border-radius: 8px; padding: 10px; background: var(--background-secondary); }
+.sos-setup-row, .sos-setup-slot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.sos-setup-slot { margin-top: 6px; padding-left: 8px; border-left: 2px solid var(--interactive-accent); }
+.sos-setup-row input { flex: 1 1 150px; min-width: 0; }
+.sos-setup-row input.sos-setup-name { flex: 2 1 200px; font-weight: 600; }
+.sos-setup-row input.sos-setup-credits { flex: 0 0 72px; }
+.sos-setup-slot input.sos-setup-time { width: 104px; }
+.sos-setup-slot input.sos-setup-room { flex: 1 1 90px; min-width: 70px; }
+.sos-setup-to { color: var(--text-muted); font-size: var(--font-ui-smaller); }
+.sos-setup-x { flex: 0 0 auto; }
+.sos-setup-add { margin-top: 8px; font-size: var(--font-ui-small); }
+.sos-setup-add.is-course { width: 100%; }
+.sos-setup-summary { margin: 4px 0 10px; line-height: 1.7; }
+.sos-setup-foot { display: flex; gap: 8px; align-items: center; margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--background-modifier-border); position: sticky; bottom: -1px; background: var(--modal-background); }
+.sos-setup-space { flex: 1; }
+.is-mobile .modal.sos-setup { width: 100vw; max-height: 100vh; }
+
+/* Study callouts: definition, theorem, method, exercise, solution, quiz */
+.callout[data-callout="definition"] { --callout-color: 134, 178, 242; --callout-icon: lucide-book-a; }
+.callout[data-callout="theorem"] { --callout-color: 174, 159, 242; --callout-icon: lucide-sigma; }
+.callout[data-callout="method"] { --callout-color: 127, 203, 240; --callout-icon: lucide-list-ordered; }
+.callout[data-callout="exercise"] { --callout-color: 242, 200, 106; --callout-icon: lucide-pencil-line; }
+.callout[data-callout="solution"] { --callout-color: 100, 214, 160; --callout-icon: lucide-check-check; }
+.callout[data-callout="quiz"] { --callout-color: 240, 161, 198; --callout-icon: lucide-circle-help; }
+.callout[data-callout="definition"] > .callout-title .callout-title-inner::before { content: "Definition · "; opacity: 0.65; font-weight: 500; }
+.callout[data-callout="theorem"] > .callout-title .callout-title-inner::before { content: "Property · "; opacity: 0.65; font-weight: 500; }
+.callout[data-callout="method"] > .callout-title .callout-title-inner::before { content: "Method · "; opacity: 0.65; font-weight: 500; }
+/* A correction sits right under its exercise. */
+.callout[data-callout="exercise"] + .callout[data-callout="solution"], .callout[data-callout="exercise"] + div > .callout[data-callout="solution"] { margin-top: -8px; }

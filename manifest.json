@@ -1,0 +1,10 @@
+{
+	"id": "studyos-notes",
+	"name": "StudyOS Notes",
+	"version": "1.0.0",
+	"minAppVersion": "1.5.0",
+	"description": "Fast class notes: a / menu of study blocks, symbols by name, numbered headings, tables you can grow, a formatting bar.",
+	"author": "Y-Labs",
+	"authorUrl": "https://github.com/yannx8",
+	"isDesktopOnly": false
+}

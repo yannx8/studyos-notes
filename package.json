@@ -1,0 +1,10 @@
+{
+  "name": "studyos-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StudyOS Notes, an Obsidian plugin for fast class notes.",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
