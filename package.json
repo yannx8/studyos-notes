@@ -1,6 +1,6 @@
 {
   "name": "studyos-notes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "StudyOS Notes, an Obsidian plugin for fast class notes.",
   "license": "SEE LICENSE IN LICENSE",

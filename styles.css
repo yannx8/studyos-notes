@@ -15,10 +15,10 @@
 .sn-table-help { margin-top: 12px; font-size: 12px; color: var(--text-faint); max-width: 236px; }
 
 /* ---- bar over a selection: dark, whatever the editor's tooltip colours ---- */
-.cm-tooltip:has(> .sn-bar) { border: none !important; background: transparent !important; box-shadow: none !important; }
-.sn-bar { display: flex; align-items: center; gap: 2px; padding: 3px; margin-bottom: 6px; border-radius: 8px; background: #23262d !important; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45); }
-.sn-bar button { height: 28px; width: 30px; padding: 0; border-radius: 6px; background: transparent !important; box-shadow: none !important; color: #c9ced6 !important; }
-.sn-bar button:hover { background: rgba(255, 255, 255, 0.1) !important; color: #ffffff !important; }
+.cm-editor .cm-tooltip.sn-bar-host { border: none; background: transparent; box-shadow: none; }
+.cm-editor .cm-tooltip .sn-bar { display: flex; align-items: center; gap: 2px; padding: 3px; margin-bottom: 6px; border-radius: 8px; background: #23262d; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45); }
+.cm-editor .cm-tooltip .sn-bar button { height: 28px; width: 30px; padding: 0; border-radius: 6px; background: transparent; box-shadow: none; color: #c9ced6; }
+.cm-editor .cm-tooltip .sn-bar button:hover { background: rgba(255, 255, 255, 0.1); color: #ffffff; }
 .sn-bar svg { width: 16px; height: 16px; }
 .sn-bar-sep { width: 1px; height: 18px; margin: 0 3px; background: rgba(255, 255, 255, 0.14); }
 

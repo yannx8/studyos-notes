@@ -635,7 +635,8 @@ function selectionBar(plugin) {
 					setIcon(b, icon);
 					b.addEventListener("mousedown", (e) => { e.preventDefault(); run(view); });
 				}
-				return { dom };
+				// The editor wraps the bar in its tooltip box: mark that box so the stylesheet can make it invisible (no :has, no !important).
+				return { dom, mount: () => { if (dom.parentElement) dom.parentElement.addClass("sn-bar-host"); } };
 			},
 		}];
 	};
