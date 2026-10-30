@@ -2,6 +2,8 @@
 
 Fast class notes in Obsidian, made for keeping up with a teacher.
 
+![StudyOS Notes: numbered headings, the / menu, symbols by name, arrows as you type](https://raw.githubusercontent.com/yannx8/studyos-notes/main/docs/demo.gif)
+
 ## What it does
 
 - **`/` menu of study blocks.** Type `/` at the start of a line: Part, Section, Definition, Example, Important, Exam tip, Exercise (numbered), Solution (folded), Theorem, Method, Summary, Self-test, Table, Formula, lists (bulleted, numbered, lettered), Code, Drawing (Excalidraw, if installed), Mind map (canvas), Divider. A few letters filter it: `/def`, `/ex`, `/tab`.
@@ -14,6 +16,15 @@ Fast class notes in Obsidian, made for keeping up with a teacher.
 - **Callouts made for study:** definition, theorem, method, exercise, solution, quiz.
 
 Everything is plain Markdown. Turn off any part in the settings.
+
+## Screenshots
+
+| | |
+| --- | --- |
+| ![Numbered heading](https://raw.githubusercontent.com/yannx8/studyos-notes/main/docs/1-numbered-heading.png) | ![The / menu](https://raw.githubusercontent.com/yannx8/studyos-notes/main/docs/2-slash-menu.png) |
+| `##` + Space: a numbered part | `/def`: the blocks menu |
+| ![Symbols by name](https://raw.githubusercontent.com/yannx8/studyos-notes/main/docs/3-symbols.png) | ![A finished note](https://raw.githubusercontent.com/yannx8/studyos-notes/main/docs/4-finished-note.png) |
+| `\Sig`: Σ and its neighbours | A finished note |
 
 ## Commands
 
